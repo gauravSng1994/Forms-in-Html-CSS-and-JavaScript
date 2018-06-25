@@ -1,0 +1,189 @@
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+.topnav {
+    background-color: #333;
+    font-weight: bold;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    margin: 0px;   
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.container{
+	width: 95.5%;
+	height: 100%;
+	background-color: #4abdac;
+	padding: 30px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	border-left: 8px solid #f7B733;
+	margin-left: 0%;
+	border-radius: 10px;
+	padding-top: 30px;
+}
+
+h1{
+	text-align: center;
+	font-size: 45px;
+	text-decoration: underline;
+	color: white;
+}
+
+.innerbox{
+	padding-left: 30px;
+	margin: 10px;
+}
+
+.Form{
+	border:3px solid #f7B733;
+	border-radius: 7px;
+	margin: 15px;
+	padding: 10px;
+	margin-bottom: 30px;
+	background-color: #99d6ff;
+}
+
+.signuptd{
+	width: 650px;
+}
+.signintd{
+	width: 600px;
+	height: 200px;
+	
+}
+.signindiv{
+	border-left: 2px solid #f7B733;
+	padding-left: 80px;
+	height: 180px;
+	margin-top: -30px;
+}
+td{
+	width: 130px;
+	height: 30px;
+}
+
+.warningtd{
+	width:200px;
+}
+#feedback td{
+width: 170px;
+}
+input[type=text] {
+	width: 167px;
+}
+input[type=password] {
+	width: 167px;
+}
+.signdiv{
+	width: 90px;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 7px;
+	padding: 5px;
+	margin-left: 65px;
+	margin-top: 10px;
+	border:2px solid #f7B733;
+	background-color: #99d6ff;
+}
+.signdiv:hover{
+	background-color:  #4abdac;
+}
+
+#Submit{
+	width: 90px;
+	font-size: 30px;
+	text-align: center;
+	border-radius: 7px;
+	margin-left: 15px;
+	padding: 10px;
+	border:2px solid #f7B733;
+	float: left;
+}
+#Submit:hover{
+	background-color: #99d6ff;
+}
+#topbtn a{
+	text-decoration: none;
+	float: right;
+	width: 90px;
+	font-size: 30px;
+	text-align: center;
+	border-radius: 7px;
+	margin-right: 15px;
+	padding: 10px;
+	border:2px solid #f7B733;
+	color: black;
+}
+#topbtn a:hover{
+	background-color: #99d6ff;
+}
+
+.lastdiv{
+	height: 80px;
+}
+.warninginput{
+	border : 2px solid red;
+}
+
+
+
+.mcqwarning1{
+	position: relative;
+	left:30%;
+	font-size: 20px;
+	bottom: 60px;
+	color: red;
+}
+.mcqwarning2{
+	position: relative;
+	left:30%;
+	font-size: 20px;
+	bottom: 60px;
+	color: red;
+}
+.mcqwarning3{
+	position: relative;
+	left:30%;
+	font-size: 20px;
+	bottom: 60px;
+	color: red;
+}
+.mcqwarning4{
+	position: relative;
+	left:30%;
+	font-size: 20px;
+	bottom: 60px;
+	color: red;
+}
+.mcqwarning5{
+	position: relative;
+	left:30%;
+	font-size: 20px;
+	bottom: 60px;
+	color: red;
+}
+.mcqq input{
+	border: 2px solid red;
+}

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo: Forms</title>
+	<link rel="stylesheet" type="text/css" href="gaurav(7).css">
+	<script type="text/javascript" src="gaurav(7).js"></script>
+</head>
+<body>
+	<div class="topnav">
+			<a href="#Sign">Sign in/Sign up</a>
+			<a href="#Personal">Personal Informations</a>
+			<a href="#MCQs">MCQs</a>
+			<a href="#Feedback">Feedback</a>
+			<a href="#Survey">Survey</a>
+	</div>
+
+	<div class="container">
+		<div id="Sign"></div>
+		<h1>Demo: Forms</h1>
+		
+		<div  class="Form" style="height: 250px;">
+			<table style="height: 250px;">
+				<tr>
+					<td class="signuptd" height="200px">
+						<h2 >Sign up</h2>
+						<div class="innerbox">
+							<table>
+								<tr>
+									<td><label>Email </label></td>
+									<td><input type="text" name="Username" id="sui1" onclick="clickvalidate(this)"></td>
+									<td id="signupwarning1" class="warningtd"><div id="signupwarning1"></div></td>
+								</tr>
+								<tr>
+									<td><label>Password </label></td>
+									<td><input type="Password" name="Password" id="sui2" onclick="clickvalidate(this)"></td>
+									<td id="signupwarning2" class="warningtd"><div id="signupwarning2"></div></td>
+								</tr>
+								<tr>
+									<td><label>Confirm password </label></td>
+									<td><input type="Password" name="Confirm password" id="sui3" onclick="clickvalidate(this)"></td>
+									<td id="signupwarning3" class="warningtd"><div id="signupwarning3"></div></td>
+								</tr>
+								
+								<tr>
+									<td></td>
+									<td><div class="signdiv" onclick="signup()" id="signupbtn">Sign up</div></td>
+								</tr>
+							</table>
+						</div>
+					</td>
+					<td class="signintd" >
+						<div class="signindiv" >
+							<h2>Sign in</h2>
+							<div class="innerbox">
+								<table>
+									<tr>
+										<td><label>Email </label></td>
+										<td><input type="text" name="Username" id="sii1" onclick="clickvalidate(this)"></td>
+										<td id="signinwarning1" class="warningtd"><div id="signinwarning1"></div></td>
+									</tr>
+									<tr>
+										<td><label>Password </label></td>
+										<td><input type="Password" name="Password" id="sii2" onclick="clickvalidate(this)"></td>
+										<td id="signinwarning2" class="warningtd"><div id="signinwarning2"></div></td>
+									</tr>
+									
+									<tr>
+									<td></td>
+									<td ><div class="signdiv" onclick="signin()">Sign in</div></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+
+			<div id="Personal" ></div>
+		</div>
+
+		
+		<div  class="Form">
+			<h2>Personal Informations</h2>
+			<div class="innerbox">
+				<table>
+					<tr>
+						<td><label>Name: </label></td>
+						<td><input type="text" name="Name" id="nameinput" onclick="clickvalidate(this)"></td>
+						<td class="warningtd"><div id="namewarning"></div></td>
+					</tr>
+					<tr>
+						<td><label>Roll no.: </label></td>
+						<td><input type="text" name="" id="rollinput" onclick="clickvalidate(this)"></td>
+						<td class="warningtd"><div id="rollwarning"></div></td>
+					</tr>
+					<tr>
+						<td><label>Branch: </label></td>
+						<td><input type="text" name="" id="branchinput" onclick="clickvalidate(this)"></td>
+						<td class="warningtd"><div id="branchwarning"></div></td>
+					</tr>
+					<tr>
+						<td><label>Semeter: </label></td>
+						<td><input type="text" name="" id="seminput" onclick="clickvalidate(this)"></td>
+						<td class="warningtd"><div id="semwarning"></div></td>
+					</tr>
+					<tr>
+						<td><label>DOB: </label></td>
+						<td>
+							<select>
+								<option>Day</option>
+								<option>01</option>
+								<option>02</option>
+								<option>03</option>
+								<option>04</option>
+								<option>05</option>
+								<option>06</option>
+								<option>07</option>
+								<option>08</option>
+								<option>09</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+								<option>13</option>
+								<option>14</option>
+								<option>15</option>
+								<option>16</option>
+								<option>17</option>
+								<option>18</option>
+								<option>19</option>
+								<option>20</option>
+								<option>21</option>
+								<option>22</option>
+								<option>23</option>
+								<option>24</option>
+								<option>25</option>
+								<option>26</option>
+								<option>27</option>
+								<option>28</option>
+								<option>29</option>
+								<option>30</option>
+								<option>31</option>
+							</select>
+							<select>
+								<option>Month</option>
+								<option>Jan</option>
+								<option>Feb</option>
+								<option>Mar</option>
+								<option>Apr</option>
+								<option>May</option>
+								<option>Jun</option>
+								<option>Jul</option>
+								<option>Aug</option>
+								<option>Sep</option>
+								<option>Oct</option>
+								<option>Nov</option>
+								<option>Dec</option>
+							</select>
+							<select>
+								<option>Year</option>
+								<option>2018</option>
+								<option>2017</option>
+								<option>2016</option>
+								<option>2015</option>
+								<option>2014</option>
+								<option>2013</option>
+								<option>2012</option>
+								<option>2011</option>
+								<option>2010</option>
+								<option>2009</option>
+								<option>2008</option>
+								<option>2007</option>
+								<option>2006</option>
+								<option>2005</option>
+								<option>2004</option>
+								<option>2003</option>
+								<option>2002</option>
+								<option>2001</option>
+								<option>2000</option>
+								<option>1999</option>
+								<option>1998</option>
+								<option>1997</option>
+								<option>1996</option>
+								<option>1995</option>
+								<option>1994</option>
+								<option>1993</option>
+								<option>1992</option>
+								<option>1991</option>
+								<option>1990</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label>Mob no.: </label></td>
+						<td><input type="text" name="Mob" id="mobinput" onclick="clickvalidate(this)"><br></td>
+						<td class="warningtd"><div id="mobwarning"></div></td>
+					</tr>
+					<tr>
+						<td><label>Address: </label></td>
+						<td><textarea rows="3" cols="60"></textarea></td>
+					</tr>
+				</table>
+				<div id="MCQs"></div>
+			</div>
+			
+		</div>
+
+		<div  class="Form">
+			<h2>MCQs</h2>
+			<div class="innerbox">
+				<div>
+					<div id="mcqq1">Q 1. Choose the correct HTML element for the largest heading:</div><br>
+					<input type="radio" name="Q1" id="mcq1.1"><label for="mcq1.1">< head ></label><br>
+					<input type="radio" name="Q1" id="mcq1.2"><label for="mcq1.2">< heading ></label><br>
+					<input type="radio" name="Q1" id="mcq1.3"><label for="mcq1.3">< h6 ></label><br>
+					<input type="radio" name="Q1" id="mcq1.4"><label for="mcq1.4">< h1 ></label>
+					<div id="mcq1" class="mcqwarning1"></div>
+				</div>
+				<div>
+					<div id="mcqq2">Q 2. Choose the correct HTML element to define important text </div><br>
+					<input type="radio" name="Q2" id="mcq2.1"><label for="mcq2.1">< i ></label><br>
+					<input type="radio" name="Q2" id="mcq2.2"><label for="mcq2.2">< strong ></label><br>
+					<input type="radio" name="Q2" id="mcq2.3"><label for="mcq2.3">< important ></label><br>
+					<input type="radio" name="Q2" id="mcq2.4"><label for="mcq2.4">< b ></label>
+					<div id="mcq2" class="mcqwarning2"></div >
+				</div>
+				<div id="mcqq3">
+					<div>Q 3. Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed? </div><br>
+					<input type="radio" name="Q3" id="mcq3.1"><label for="mcq3.1">alt</label><br>
+					<input type="radio" name="Q3" id="mcq3.2"><label for="mcq3.2">title</label><br>
+					<input type="radio" name="Q3" id="mcq3.3"><label for="mcq3.3">longdesk</label><br>
+					<input type="radio" name="Q3" id="mcq3.4"><label for="mcq3.4">src</label>
+					<div class="mcqwarning3" id="mcq3"></div >
+				</div>
+				<div id="mcqq4">
+					<div>Q 4. Which character is used to indicate an end tag? </div></div><br>
+					<input type="radio" name="Q4" id="mcq4.1"><label for="mcq4.1">*</label><br>
+					<input type="radio" name="Q4" id="mcq4.2"><label for="mcq4.2">(</label><br>
+					<input type="radio" name="Q4" id="mcq4.3"><label for="mcq4.3">/</label><br>
+					<input type="radio" name="Q4" id="mcq4.4"><label for="mcq4.4"><</label>
+					<div  id="mcq4" class="mcqwarning4">
+				</div>
+				<div>
+					<div id="mcqq5">Q 5. In HTML, which attribute is used to specify that an input field must be filled out? </div><br>
+					<input type="radio" name="Q5" id="mcq5.1"><label for="mcq5.1">validate</label><br>
+					<input type="radio" name="Q5" id="mcq5.2"><label for="mcq5.2">placeholder</label><br>
+					<input type="radio" name="Q5" id="mcq5.3"><label for="mcq5.3">required</label><br>
+					<input type="radio" name="Q5" id="mcq5.4"><label for="mcq5.4">formvalidate</label>
+					<div id="mcq5" class="mcqwarning5"></div>
+				</div>
+				<div id="Survey"></div>
+				
+			</div>
+		</div>
+
+		<div  class="Form">
+			<h2>Survey on politics.</h2>
+			<div class="innerbox">
+				<div>	
+					<h4>Q 1. What are your primary sources of news & information on political issues & events?</h4>
+					
+					<div class="innerbox">
+						<p>(Please check all that apply.)</p>
+						<input type="checkbox" id="newspapers" name=""><label for="newspapers">Newspapers</label><br>
+						<input type="checkbox" id="Magazines" name=""><label for="Magazines">Magazines</label><br>
+						<input type="checkbox" id="Radio" name=""><label for="Radio">Radio</label><br>
+						<input type="checkbox" id="Television" name=""><label for="Television">Television</label><br>
+						<input type="checkbox" id="Online" name=""><label for="Online">Online news, web sites, email lists</label><br>
+						<input type="checkbox" id="Offline" name=""><label for="Offline">Offline conversations</label>
+					</div>
+				</div>
+
+				<div>
+					<h4>Q 2. How many hours per day, on average, do you spend viewing, listening to, or reading news or other political material?</h4>
+					<div class="innerbox">
+						<input type="radio" id="<1hr" name="watch"><label for="<1hr">Less than an hour</label><br>
+						<input type="radio" id="<2hr" name="watch"><label for="<2hr">1 hour to 2 hours</label><br>
+						<input type="radio" id="<3hr" name="watch"><label for="<3hr">2 hours to 3 hours</label><br>
+						<input type="radio" id="<5hr" name="watch"><label for="<5hr">3 hours to 5 hours</label><br>
+						<input type="radio" id=">5hr" name="watch"><label for=">5hr">More than 5 hours</label>
+					</div>
+				</div>
+
+				<div>
+					<h4>Q 3. How many times have you sent electronic mail to your government's highest political official in the last year? (President in India)</h4>
+					<div class="innerbox">
+						<input type="radio" id="Never3" name="email"><label for="Never3">Never</label><br>
+						<input type="radio" id="<3times" name="email"><label for="<3times">1 to 2 times</label><br>
+						<input type="radio" id="<5times" name="email"><label for="<5times">3 to 5 times</label><br>
+						<input type="radio" id=">10times" name="email"><label for=">10times">6 to 10 times</label><br>
+						<input type="radio" id="<10times" name="email"><label for="<10times">More than 10 times</label>
+					</div>
+				</div>
+
+				<div>
+					<h4>Q 4. Should government control military services?</h4>
+					<div class="innerbox">
+						<input type="radio" id="Yes4" name="military"><label for="Yes4">Yes</label><br>
+						<input type="radio" name="military" id="No4"><label for="No4">No</label><br>
+						<input type="radio" name="military" id="can't4"><label for="can't4">Can't say.</label>
+					</div>
+				</div>
+
+				<div>
+					<h4>Q 5. People are better off with free trade than with tariffs?</h4>
+					<div class="innerbox">
+						<input type="radio" id="Yes5" name="trade"><label for="Yes5">Yes</label><br>
+						<input type="radio" name="trade" id="No5"><label for="No5">No</label><br>
+						<input type="radio" name="trade" id="can't5"><label for="can't5">Can't say.</label>
+					</div>
+				</div>
+				<div id="Feedback" ></div>
+			</div>
+		</div>
+
+		<div  class="Form" id="feedback">
+			<h2>Feedback</h2>
+			<div class="innerbox">
+				<div>
+					<table>
+						<tr><h4>
+						Q 1. Is this the first time you have visited the website?</h4></tr>
+						<tr>
+							<td><input type="radio" name="feedbackQ1" id="Excellent1"><label for="Excellent1">Yes</label></td>
+							<td><input type="radio" name="feedbackQ1" id="Good1"><label for="Good1">No</label></td>
+						</tr>
+					</table>
+				</div>
+				<div>
+					<table>
+						<tr><h4>Q 2. Did you find what you needed?</h4></tr>
+						<tr>
+							<td><input type="radio" name="feedbackQ2" id="Excellent2"><label>Yes, all of it </label></td>
+							<td><input type="radio" name="feedbackQ2"><label for="Excellent2">Yes, some of it </label></td>
+							<td><input type="radio" name="feedbackQ2" id="feed2.2"><label for="feed2.2">No, none of it </label></td>
+						</tr>
+					</table>
+				</div>
+				<div>
+					<table>
+						<tr><h4>Q 3. Please tell us how easy it is to find information on the site.</h4></tr>
+						<tr>
+							<td><input type="radio" name="feedbackQ4" id="Excellent3"><label for="Excellent3">Easy</label></td>
+							<td><input type="radio" name="feedbackQ4" id="feed3.2"><label for="feed3.2">Average</label></td>
+							<td><input type="radio" name="feedbackQ4" id="feed3.3"><label for="feed3.3">Difficult </label></td>
+							<td><input type="radio" name="feedbackQ4" id="feed3.4"><label for="feed3.4">Very Difficult </label></td>
+						</tr>
+					</table>
+				</div>
+				<div>
+					<table>
+						<tr><h4>Q 4. What is your overall impression of the site?</h4></tr>
+						<tr>
+							<td><input type="radio" name="feedbackQ4" id="feed4.1"><label for="feed4.1">Below Expectations</label></td>
+							<td><input type="radio" name="feedbackQ4" id="feed4.2"><label for="feed4.2">Meets Expectations</label></td>
+							<td><input type="radio" name="feedbackQ4" id="feed4.3"><label for="feed4.3">Exceeds Expectations</label></td>
+							
+						</tr>
+					</table>
+				</div>
+				<div>
+					<table>
+						<tr><h4>Q 5. What is the likelihood that you will visit the website again?</h4></tr>
+						<tr>
+							<td><input type="radio" name="feedbackQ5" id="feed5.1"><label for="feed5.1">Extremely likely </label></td>
+							<td><input type="radio" name="feedbackQ5" id="feed5.2"><label for="feed5.2">Very likely </label></td>
+							<td><input type="radio" name="feedbackQ5" id="feed5.3"><label for="feed5.3">Moderately likely </label></td>
+							<td><input type="radio" name="feedbackQ5" id="feed5.4"><label for="feed5.4">Slightly likely </label></td>
+						</tr>
+					</table>
+				</div>
+				<div>
+					<table>
+						<tr><h4>Q 6. Would you reccomend this wbseite to your friends?</h4></tr>
+						<tr>
+							<td><input type="radio" name="feedbackQ6" id="feed6.1"><label for="feed6.1">Yes</label></td>
+							<td><input type="radio" name="feedbackQ6" id="feed6.2"><label for="feed6.2">No</label></td>
+							<td><input type="radio" name="feedbackQ6" id="feed6.3"><label for="feed6.3">May be</label></td>
+							<td><input type="radio" name="feedbackQ6" id="feed6.4"><label for="feed6.4">Can't say</label></td>
+						</tr>
+					</table>
+				</div>
+				<div>
+					<table>
+						<tr><h4>Q 7. How was the color combination of this website?</h4></tr>
+						<tr>
+							<td><input type="radio" name="feedbackQ7" id="feed7.1"><label for="feed7.1">Excellent</label></td>
+							<td><input type="radio" name="feedbackQ7" id="feed7.2"><label for="feed7.2">Good</label></td>
+							<td><input type="radio" name="feedbackQ7" id="feed7.3"><label for="feed7.3">Fair</label></td>
+							<td><input type="radio" name="feedbackQ7" id="feed7.4"><label for="feed7.4">Poor</label></td>
+						</tr>
+					</table>
+				</div>
+				<div>
+					<table>
+						<tr><h4>Q 8. How would you rate the layout of this page?</h4></tr>
+						<tr>
+							<td><input type="radio" name="feedbackQ8" id="feed8.1"><label for="feed8.1">Excellent</label></td>
+							<td><input type="radio" name="feedbackQ8" id="feed8.2"><label for="feed8.2">Good</label></td>
+							<td><input type="radio" name="feedbackQ8" id="feed8.3"><label for="feed8.3">Fair</label></td>
+							<td><input type="radio" name="feedbackQ8" id="feed8.4"><label for="feed8.4">Poor</label></td>
+						</tr>
+					</table>
+				</div>
+				<div>
+					<table>
+						<tr><h4>Q 9. Do you find anything inappropriate in this page?</h4></tr>
+						<tr>
+							<td><input type="radio" name="feedbackQ9" id="feed9.1"><label for="feed9.1">Yes</label></td>
+							<td><input type="radio" name="feedbackQ9" id="feed9.2"><label for="feed9.2">No</label></td>
+							<td><input type="radio" name="feedbackQ9" id="feed9.3"><label for="feed9.3">Can't say</label></td>
+						</tr>
+					</table>
+				</div>
+				<div>
+					<table>
+						<tr><h4>Q 10. Would you like to join our team?<h4></tr>
+						<tr>
+							<td><input type="radio" name="feedbackQ10" id="feed10.1"><label for="feed10.1">Yes</label></td>
+							<td><input type="radio" name="feedbackQ10" id="feed10.2"><label for="feed10.2">No</label></td>
+							<td><input type="radio" name="feedbackQ10" id="feed10.3"><label for="feed10.3">Can't say</label></td>
+						</tr>
+					</table>
+				</div>
+				<div>
+					<table>
+						<tr>
+							<td><h4>Comment (if any)</h4></td>
+							<td><textarea cols="60" rows="3"> </textarea></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="lastdiv">
+			<div id="Submit" onclick="submitbtn()"><a href="" id="submitlink" style="text-decoration: none; color:black;">Submit</a></div>
+			<div id="topbtn"><a href="#top">Top</a></div>
+		</div>
+	</div>
+</body>
+</html>
